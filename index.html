@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="banner">
+        <div class="blog-header">
+            <h1>Bloggg</h1>
+        </div>
+    </main>
+    <div class="postagem">
+        <form id="postagem-form">
+            <label for="titulopost">Escolha o título do seu post:</label><br><br>
+            <input type="text" id="titulopost" name="titulopost"/><br><br>
+            <label for="post">O que você gostaria de compartilhar?</label><br><br>
+            <input type="text" id="post" name="post" /><br><br>
+            <button id="button" type="submit">Publicar</button>
+        </form>
+    </div><hr>
+    <section class="publicados">
+        <h1>Publicação</h1><br><br>
+        <h2 id="renderizador-titulo"></h2><br>
+        <p id="renderizador-conteudo">Sem publicações</p>
+    </section>
+    <script src='main.js'></script>
+</body>
+</html>

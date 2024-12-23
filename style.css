@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color1:#732439;
+    --color2:#8C2756;
+    --color3:#5D75A6;
+    --color4:#7595BF;
+    --color5:#9AB5D9;
+    --color6:#ffffff;
+    --color7:#b37692;
+    --color8:#000000;
+}
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--color6);
+    margin: 0;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+.banner {
+    background-color: var(--color2);
+    width: 100%;
+    height: 6rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.blog-header{
+    font-family:'Sour Gummy';
+    color: var(--color6);
+    text-align: center;
+    font-size: 2rem;
+}
+.postagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 4rem;
+    font-size: 16px;
+}
+#titulopost{
+    height: 25px;
+    width: 80vw;
+    border-radius: 8px;
+    background-color: var(--color7);
+}
+#post{
+    height:100px;
+    width: 80vw;
+    border-radius: 8px;
+    background-color: var(--color7);
+
+}
+#titulopost:focus{
+    background-color: var(--color6);
+}
+#post:focus{
+    background-color: var(--color6);
+}
+#button {
+  align-items: center;
+  background-color: var(--color1);
+  border: 2px solid var(--color8);
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#button:after {
+  background-color: var(--color8);
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+#button:active {
+  background-color: var(--color3);
+  color: var(--color8);
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+#button:hover {
+  outline: 0;
+  background-color: var(--color3);
+  color: var(--color6);
+}
+
+@media (min-width: 768px) {
+    #button {
+    padding: 0 40px;
+  }
+}
+.publicados{
+    font-family:'Sour Gummy';
+    font-size: 16px;
+    margin: 4rem;
+    text-align: center;
+}
+.publicados h1{
+    font-size: 4rem;
+    color: var(--color3);
+}
